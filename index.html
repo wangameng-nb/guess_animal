@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜动物游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>猜动物游戏</h1>
+        <div class="game-info">
+            <p>我想了一个动物，你能猜出来吗？</p>
+            <p>提示：点击获取提示按钮，提示会从模糊到精确逐渐给出</p>
+        </div>
+        <div class="game-area">
+            <input type="text" id="guess-input" placeholder="输入你猜测的动物名称...">
+            <button id="guess-btn">猜一下</button>
+            <button id="hint-btn">获取提示</button>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <div class="result-area">
+            <p id="result-message"></p>
+            <p id="hint-message"></p>
+            <p id="score-message">得分：<span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
