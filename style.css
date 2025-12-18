@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.game-info {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+}
+
+.game-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.game-info p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #666;
+}
+
+.game-area {
+    margin-bottom: 30px;
+}
+
+#guess-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#guess-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+#guess-btn:hover {
+    background-color: #2980b9;
+}
+
+#hint-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+#hint-btn:hover {
+    background-color: #e67e22;
+}
+
+#restart-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+#restart-btn:hover {
+    background-color: #229954;
+}
+
+.result-area {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+#result-message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#hint-message {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#score-message {
+    font-size: 1.1em;
+    color: #27ae60;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    #guess-input {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
