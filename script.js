@@ -50,6 +50,9 @@ function initGame() {
     
     // 让输入框获得焦点
     guessInput.focus();
+    
+    // 游戏开始时自动显示第一个提示
+    showHint();
 }
 
 // 检查猜测
